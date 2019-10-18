@@ -19,7 +19,7 @@ public class Game_Board {
 	//=====================================================
 	//Creates the board
 	public void makeBoard() {
-		System.out.println("--8-1-2--");
+		System.out.println("--0-1-2--");
 		for(int row = 0; row < ROW; row++) {
 			if(row == 0) {
 				System.out.print('0');
@@ -102,75 +102,6 @@ public class Game_Board {
 		System.out.println("Cat's Game!");
 		makeBoard();
 	}
-	
-	//make a check for cat game
-	
-	//Check if the game is over by checking the following functions
-	/*public void isGameOver() {
-		checkRow();
-		checkCol();
-		checkDia();
-		if(counter == 9 && winner == false) {
-			System.out.println("Cat's Game!");
-			makeBoard();
-			gameActive = false; //stop the game
-		}
-	}
-	//======================================================
-	//checks for rows
-	public void checkRow() {
-		if(board[0][0] == Player_turn.getPlayer() && board[0][1] == Player_turn.getPlayer() && board[0][2] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}else if(board[1][0] == Player_turn.getPlayer() && board[1][1] == Player_turn.getPlayer() && board[1][2] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}else if(board[2][0] == Player_turn.getPlayer() && board[2][1] == Player_turn.getPlayer() && board[2][2] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}
-	}
-	//=========================================================
-	//Check for cols
-	public void checkCol() {
-		if(board[0][0] == Player_turn.getPlayer() && board[1][0] == Player_turn.getPlayer() && board[2][0] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}else if(board[0][1] == Player_turn.getPlayer() && board[1][1] == Player_turn.getPlayer() && board[2][1] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}else if(board[0][2] == Player_turn.getPlayer() && board[1][2] == Player_turn.getPlayer() && board[2][2] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}
-	}
-	//=================================================================
-	//check for the diagonals
-	public void checkDia() {
-		if(board[0][0] == Player_turn.getPlayer() && board[1][1] == Player_turn.getPlayer() && board[2][2] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}else if(board[0][2] == Player_turn.getPlayer() && board[1][1] == Player_turn.getPlayer() && board[2][0] == Player_turn.getPlayer()) {
-			System.out.println(Player_turn.getPlayer() + " Player Wins!");
-			winner = true;
-			makeBoard();
-			gameActive = false; //stop the game
-		}
-	}
 	//=====================================================================
-	*/
+	
 }
